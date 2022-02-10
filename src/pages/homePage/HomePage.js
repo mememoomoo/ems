@@ -1,13 +1,7 @@
 import HomeMenu from "../../components/menus/homeMenu/HomeMenu";
 import "./assets/homePage.css";
-import PosterBackground from "./assets/home-poster-background.png";
-
-const posterBackground = {
-  backgroundImage: `url(${PosterBackground})`,
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-};
+import MicCrunch from "../../components/posters/micCrunch/micCrunch";
+import BaconIpsum from "../../components/baconIpsum/baconIpsum";
 
 function HomePage() {
   return (
@@ -16,12 +10,11 @@ function HomePage() {
         <HomeMenu />
       </div>
       <div className="poster-wrapper">
-        <div style={posterBackground} className="poster-container">
-          <div className="poster-content">
-            <p>This the poster</p>
-            <p>This is a space</p>
-          </div>
-        </div>
+        <MicCrunch
+          logoText="Event Medical Staffing"
+          pageName="About"
+          bodyContent={<BaconIpsum />}
+        />
       </div>
     </div>
   );
