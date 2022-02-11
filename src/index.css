@@ -1,5 +1,8 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --layerOne: 0;
+  --layerTwo: 10;
+  --layerThree: 20;
   font-size: 16px;
 }

@@ -3,6 +3,10 @@ import "./assets/homePage.css";
 import MicCrunch from "../../components/posters/micCrunch/micCrunch";
 import BaconIpsum from "../../components/baconIpsum/baconIpsum";
 
+let l = "Event Medical Staffing";
+let p = "About";
+let b = <BaconIpsum />;
+
 function HomePage() {
   return (
     <div className="home-page-wrapper">
@@ -10,11 +14,7 @@ function HomePage() {
         <HomeMenu />
       </div>
       <div className="poster-wrapper">
-        <MicCrunch
-          logoText="Event Medical Staffing"
-          pageName="About"
-          bodyContent={<BaconIpsum />}
-        />
+        <MicCrunch logoText={l} pageName={p} bodyContent={b} />
       </div>
     </div>
   );
