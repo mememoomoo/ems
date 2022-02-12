@@ -8,7 +8,7 @@ import BackgroundVideo from "./components/backgroundVideo/backgroundVideo";
 import "./reset.css";
 import "./index.css";
 import "./components/ui/navButtons/assets/navButtons.css";
-import "./pages/assets/pages.css";
+import "./components/posters/posters.css";
 
 function App() {
   return (

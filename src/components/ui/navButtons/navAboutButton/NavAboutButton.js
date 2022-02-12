@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 import "./assets/navAboutButton.css";
-import Arrow from "../assets/arrow.svg";
 
-function NavAboutButton() {
+function NavAboutButton(props) {
   return (
     <div className="link-container">
       <Link to="/about">
-        <div className="arrow-right">
-          <img src={Arrow} alt="" />
-        </div>
+        {props.arrow}
         <p>About</p>
       </Link>
     </div>

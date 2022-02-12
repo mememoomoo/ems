@@ -1,0 +1,35 @@
+.poster-wrapper {
+  width: 100vw;
+  height: calc(100vh - var(--poster-top-margin));
+}
+
+.poster-container {
+  --poster-top-margin: 5vh;
+  --poster-height: 50rem;
+  --poster-width: calc(var(--poster-height) * 0.70625);
+  width: var(--poster-width);
+  height: var(--poster-height);
+  box-shadow: 1rem 1rem 1rem var(--black);
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+  margin-top: var(--poster-top-margin);
+}
+
+.poster-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: var(--poster-width);
+  height: var(--poster-height);
+  position: absolute;
+  margin-top: var(--poster-top-margin);
+}
+
+.poster-content {
+  color: var(--white);
+  z-index: var(--layerTwo);
+  padding: 1rem;
+  width: var(--poster-width);
+  height: var(--poster-height);
+}

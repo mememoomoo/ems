@@ -1,20 +1,28 @@
 import Home from "../../ui/navButtons/navHomeButton/NavHomeButton";
 import Contact from "../../ui/navButtons/navContactButton/NavContactButton";
+import "../menu.css";
 import "./assets/aboutMenu.css";
+import ArrowRight from "../../ui/navButtons/assets/ArrowRight";
+import ArrowLeft from "../../ui/navButtons/assets/ArrowLeft";
+
+const right = <ArrowRight />;
+const left = <ArrowLeft />;
 
 function AboutMenu() {
-  <nav className="about-menu-wrapper">
-    <div className="contact-nav-wrapper">
-      <div className="contact-nav-container">
-        <Contact />
+  return (
+    <nav className="menu-wrapper">
+      <div className="left-nav-wrapper">
+        <div className="left-nav-container">
+          <Home arrow={left} />
+        </div>
       </div>
-    </div>
-    <div className="home-nav-wrapper">
-      <div className="home-nav-container">
-        <Home />
+      <div className="right-nav-wrapper">
+        <div className="right-nav-container">
+          <Contact arrow={right} />
+        </div>
       </div>
-    </div>
-  </nav>;
+    </nav>
+  );
 }
 
 export default AboutMenu;

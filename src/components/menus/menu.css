@@ -1,0 +1,19 @@
+.menu-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-nav-wrapper {
+  order: 1;
+  flex: 50%;
+}
+
+.right-nav-wrapper {
+  order: 2;
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
