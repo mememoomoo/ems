@@ -1,0 +1,60 @@
+.hypnotar-logo {
+  --top-box: 10.5rem;
+}
+
+.hypnotar-text-box {
+  position: absolute;
+  left: 11.4rem;
+  z-index: calc(var(--layerTwo) + 2);
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  color: #3b4346;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  background-color: #f9b92d;
+  padding: 0.5rem;
+  width: 12rem;
+  border: 0.3rem solid #3b4346;
+  border-radius: 0.2rem;
+}
+
+.hypnotar-top-box {
+  top: var(--top-box);
+}
+
+.hypnotar-middle-box {
+  top: calc(var(--top-box) + 5rem);
+}
+
+.hypnotar-bottom-box {
+  top: calc(var(--top-box) + 10rem);
+}
+
+.hypnotar-neck {
+  position: absolute;
+  z-index: calc(var(--layerTwo) + 1);
+  top: 4rem;
+  left: 16.2rem;
+}
+
+.hypnotar-ribbon {
+  position: absolute;
+  left: 11.75rem;
+  z-index: var(--layerTwo);
+  background-color: #f9b92d;
+  width: 12rem;
+  height: 3.5rem;
+  border: 0.3rem solid #3b4346;
+  border-right: none;
+  border-left: none;
+  transform: rotate(155deg);
+}
+
+.hypnotar-ribbon-top {
+  top: calc(var(--top-box) + 2.35rem);
+}
+
+.hypnotar-ribbon-bottom {
+  top: calc(var(--top-box) + 7.4rem);
+}

@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  src: url(./fonts/ttf/BebasNeue-Regular.ttf) format("truetype");
+}
+
+.hypnotar-background {
+  display: flex;
+  overflow: hidden;
+}
+
+.hypnotar-logo-container {
+  position: absolute;
+  z-index: calc(var(--layerOne) + 5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hypnotar-burst {
+  position: absolute;
+  z-index: calc(var(--layerOne) + 4);
+  top: 4rem;
+  left: 7rem;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: linear;
+}
+
+.hypnotar-grunge {
+  position: absolute;
+  z-index: calc(var(--layerOne) + 3);
+  opacity: 0.1;
+}
+
+.hypnotar-overlay {
+  opacity: 0.2;
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  z-index: calc(var(--layerOne) + 3);
+  bottom: 5rem;
+  left: 5rem;
+}
+
+.hypnotar-cutout {
+  width: 25rem;
+  height: 25rem;
+  z-index: calc(var(--layerOne) + 2);
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+}
+
+.hypnotar-swirl {
+  z-index: calc(var(--layerOne) + 1);
+  width: 25rem;
+  height: 25rem;
+  border-radius: 20rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  animation: spin 12s linear infinite;
+}
+
+.hypnotar-poster-background {
+  z-index: calc(var(--layerOne));
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

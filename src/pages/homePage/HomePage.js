@@ -1,10 +1,6 @@
 import HomeMenu from "../../components/menus/homeMenu/HomeMenu";
 import "./assets/homePage.css";
-import MicCrunch from "../../components/posters/micCrunch/micCrunch";
-import AboutCopy from "../aboutPage/assets/aboutCopy";
-
-let p = "Home";
-let b = <AboutCopy />;
+import Hypnotar from "../../components/posters/hypnotar/Hypnotar";
 
 function HomePage() {
   return (
@@ -13,7 +9,7 @@ function HomePage() {
         <HomeMenu />
       </div>
       <div className="poster-wrapper">
-        <MicCrunch pageName={p} bodyContent={b} />
+        <Hypnotar />
       </div>
     </div>
   );
