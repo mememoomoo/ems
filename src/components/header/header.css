@@ -1,0 +1,30 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header-logo-container {
+  flex: 50%;
+  color: var(--white);
+}
+
+.header-nav-container {
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.header-nav-container a,
+.header-nav-container a:visited {
+  text-decoration: none;
+  color: var(--white);
+}

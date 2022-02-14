@@ -5,6 +5,7 @@ import Contact from "./routes/Contact";
 import Employee from "./routes/Employee";
 import NotFound from "./routes/NotFound";
 import BackgroundVideo from "./components/backgroundVideo/backgroundVideo";
+import Header from "./components/header/Header";
 import "./reset.css";
 import "./index.css";
 import "./components/ui/navButtons/assets/navButtons.css";
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
