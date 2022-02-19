@@ -1,0 +1,75 @@
+.hypnotar-copy-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: var(--layerTwo);
+  align-content: flex-end;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.hypnotar-content-box {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+.hypnotar-contact-box,
+.hypnotar-about-box {
+  width: 3rem;
+  background-color: #3b4346;
+  color: #fff;
+  border: 0.3rem solid #3b4346;
+  text-align: center;
+  height: 7rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.hypnotar-center-box {
+  border-top: 0.3rem solid #3b4346;
+  border-bottom: 0.3rem solid #3b4346;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.hypnotar-tagline-box {
+  width: 100%;
+  height: 70%;
+  border-bottom: 0.3rem solid #3b4346;
+  display: flex;
+  align-items: center;
+}
+
+.hypnotar-copyright-box {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.hypnotar-tagline-box p {
+  padding: 0 1rem;
+}
+
+.hypnotar-contact-box p {
+  transform: rotate(270deg);
+}
+
+.hypnotar-about-box p {
+  transform: rotate(90deg);
+}
